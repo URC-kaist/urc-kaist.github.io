@@ -1,2 +1,6 @@
-/* Custom site-wide overrides.
-   Currently empty; add styles here when needed. */
+/* Custom site-wide overrides. */
+
+/* Ensure logo height classes are available even if Tailwind utilities are missing. */
+.h-8 { height: 2rem; }
+@media (min-width: 768px) { .md\:h-9 { height: 2.25rem; } }
+@media (min-width: 1024px) { .lg\:h-10 { height: 2.5rem; } }

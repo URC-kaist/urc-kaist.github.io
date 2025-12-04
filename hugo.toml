@@ -21,8 +21,8 @@ hasCJKLanguage = true
 
 [params]
 
-  # showBlog = true
-  # mainSections = ['blog']
+  showBlog = true
+  mainSections = ['blog']
 
   googleFonts = true
 

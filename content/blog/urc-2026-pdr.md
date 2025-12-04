@@ -4,6 +4,7 @@ date = "2025-12-04"
 description = "MR2 KAIST submitted the URC 2026 PDR outlining team, resources, rover design, and test plan."
 author = "MR2 KAIST"
 tags = ["URC 2026", "competition", "PDR", "progress"]
+image = "/img/posts/rover.png"
 +++
 
 <div style="margin:1.5rem 0 1rem; text-align:center;">
