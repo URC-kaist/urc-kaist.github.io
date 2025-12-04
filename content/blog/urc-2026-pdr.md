@@ -5,6 +5,7 @@ description = "MR2 KAIST submitted the URC 2026 PDR outlining team, resources, r
 author = "MR2 KAIST"
 tags = ["URC 2026", "competition", "PDR", "progress"]
 image = "/img/posts/rover.png"
+hide_image = true
 +++
 
 <div style="margin:1.5rem 0 1rem; text-align:center;">
