@@ -70,7 +70,7 @@ hasCJKLanguage = true
 
   [[menu.main]]
     identifier = "blog"
-    name = "Blog"
+    name = "Posts"
     url = "/blog/"
     weight = 4
 
@@ -108,3 +108,9 @@ hasCJKLanguage = true
     url = "https://www.youtube.com/@MR2KAISTRoverTeam"
     pre = "<i class='fa-brands fa-youtube text-2xl'></i>"
     weight = 4
+
+  [[menu.footer]]
+    name = "Instagram"
+    url = "https://www.instagram.com/urc_mr2/"
+    pre = "<i class='fa-brands fa-instagram text-2xl'></i>"
+    weight = 5
