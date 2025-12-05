@@ -207,12 +207,12 @@ date = "2025-06-25"
       <p><em>Lead, Management</em><br>Team management & ops</p>
     </div>
     <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Oh Soyeon">
+      <img src="/img/members/2026/OhSoYeon.jpeg" alt="Oh Soyeon">
       <h3>Oh Soyeon</h3>
       <p><em>Member, Management</em><br>Operations & support</p>
     </div>
     <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Joo Heewon">
+      <img src="/img/members/2026/JooHeeWon.jpeg" alt="Joo Heewon">
       <h3>Joo Heewon</h3>
       <p><em>Member, Management</em><br>Operations & support</p>
     </div>
@@ -249,12 +249,12 @@ date = "2025-06-25"
       <p><em>Member, Mechanics</em><br>Mechanical design</p>
     </div>
     <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Kim Sugi">
+      <img src="/img/members/2026/KimSuGi.jpeg" alt="Kim Sugi">
       <h3>Kim Sugi</h3>
       <p><em>Member, Mechanics</em><br>Mechanical design</p>
     </div>
     <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Yu Sohyeon">
+      <img src="/img/members/2026/YuSoHyeon.jpeg" alt="Yu Sohyeon">
       <h3>Yu Sohyeon</h3>
       <p><em>Member, Mechanics</em><br>Mechanical design</p>
     </div>
