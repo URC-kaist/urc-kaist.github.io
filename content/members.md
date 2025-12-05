@@ -301,7 +301,7 @@ date = "2025-06-25"
       <p><em>Member, Software</em><br>Software development</p>
     </div>
     <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Paik Inseong">
+      <img src="/img/members/2026/PaikInSeong.jpeg" alt="Paik Inseong">
       <h3>Paik Inseong</h3>
       <p><em>Member, Software</em><br>Software development</p>
     </div>
