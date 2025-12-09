@@ -88,236 +88,226 @@ date = "2025-06-25"
 </div>
 
 <div id="members-2025" class="members-panel">
-<div class="team-section">
-  <div class="team-title">Leadership</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
-      <h3>Jung Myungwoo</h3>
-      <p><em>Team Leader</em><br>Overall in charge of rover development</p>
+  <div class="team-section">
+    <div class="team-title">Leadership</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
+        <h3>Jung Myungwoo</h3>
+        <p><em>Team Leader</em><br>Overall in charge of rover development</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Management</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
-      <h3>Ahn Yeonsu</h3>
-      <p><em>Management Lead</em><br>Team management & operations</p>
-    </div>
-  </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Software</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
-      <h3>Myung Gyungmin</h3>
-      <p><em>Lead, Software</em><br>Software architecture</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/JeonJaeWon.jpeg" alt="Jeon Jaewon">
-      <h3>Jeon Jaewon</h3>
-      <p><em>Member, Software</em><br>Science dashboard development</p>
+  <div class="team-section">
+    <div class="team-title">Software</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
+        <h3>Myung Gyungmin</h3>
+        <p><em>Lead, Software</em><br>Software architecture</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/JeonJaeWon.jpeg" alt="Jeon Jaewon">
+        <h3>Jeon Jaewon</h3>
+        <p><em>Member, Software</em><br>Science dashboard development</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Electronics</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/SeoJungGeun.jpeg" alt="Seo Jung-geun">
-      <h3>Seo Jung-geun</h3>
-      <p><em>Lead, Electronics</em><br>Electrical systems</p>
+  <div class="team-section">
+    <div class="team-title">Electronics</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/SeoJungGeun.jpeg" alt="Seo Jung-geun">
+        <h3>Seo Jung-geun</h3>
+        <p><em>Lead, Electronics</em><br>Electrical systems</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Hardware</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/ChoiJunBin.jpeg" alt="Choi Junbin">
-      <h3>Choi Junbin</h3>
-      <p><em>Lead, Hardware</em><br>Hardware development</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/JooMinChan.jpeg" alt="Joo Minchan">
-      <h3>Joo Minchan</h3>
-      <p><em>Member, Hardware</em><br>Robot arm development</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/KimDongHee.jpeg" alt="Kim Donghee">
-      <h3>Kim Donghee</h3>
-      <p><em>Member, Hardware</em><br>Hardware development</p>
+  <div class="team-section">
+    <div class="team-title">Hardware</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/ChoiJunBin.jpeg" alt="Choi Junbin">
+        <h3>Choi Junbin</h3>
+        <p><em>Lead, Hardware</em><br>Hardware development</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/JooMinChan.jpeg" alt="Joo Minchan">
+        <h3>Joo Minchan</h3>
+        <p><em>Member, Hardware</em><br>Robot arm development</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/KimDongHee.jpeg" alt="Kim Donghee">
+        <h3>Kim Donghee</h3>
+        <p><em>Member, Hardware</em><br>Hardware development</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Science</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
-      <h3>Kim Robin</h3>
-      <p><em>Lead, Science</em><br>Science mission</p>
+  <div class="team-section">
+    <div class="team-title">Science</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
+        <h3>Kim Robin</h3>
+        <p><em>Lead, Science</em><br>Science mission</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Bio &amp; Replica</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyungmin">
-      <h3>Noh Gyungmin</h3>
-      <p><em>Member, Bio &amp; Replica</em><br>Bio experiments & replicas</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/KimHeeTae.jpeg" alt="Kim Heetae">
-      <h3>Kim Heetae</h3>
-      <p><em>Member, Bio &amp; Replica</em><br>Bio experiments & replicas</p>
+  <div class="team-section">
+    <div class="team-title">Bio &amp; Replica</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyungmin">
+        <h3>Noh Gyungmin</h3>
+        <p><em>Member, Bio &amp; Replica</em><br>Bio experiments & replicas</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/KimHeeTae.jpeg" alt="Kim Heetae">
+        <h3>Kim Heetae</h3>
+        <p><em>Member, Bio &amp; Replica</em><br>Bio experiments & replicas</p>
+      </div>
     </div>
   </div>
-</div>
+  
+  <div class="team-section">
+    <div class="team-title">Management</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
+        <h3>Ahn Yeonsu</h3>
+        <p><em>Management Lead</em><br>Team management & operations</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div id="members-2026" class="members-panel active">
-<div class="team-section">
-  <div class="team-title">General Lead</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
-      <h3>Jung Myungwoo</h3>
-      <p><em>General Lead</em><br>Overall leadership</p>
+  <div class="team-section">
+    <div class="team-title">Team Leaders</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
+        <h3>Jung Myungwoo</h3>
+        <p><em>General Lead</em><br>Overall leadership</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyeongmin">
+        <h3>Noh Gyeongmin</h3>
+        <p><em>Lead, Mechanics</em><br>Mechanical systems</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
+        <h3>Myung Gyungmin</h3>
+        <p><em>Lead, Software</em><br>Software architecture</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
+        <h3>Kim Robin</h3>
+        <p><em>Lead, Science</em><br>Science mission</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
+        <h3>Ahn Yeonsu</h3>
+        <p><em>Lead, Management / Electronics</em><br><em></p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Management</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
-      <h3>Ahn Yeonsu</h3>
-      <p><em>Lead, Management</em><br>Team management & ops</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/OhSoYeon.jpeg" alt="Oh Soyeon">
-      <h3>Oh Soyeon</h3>
-      <p><em>Member, Management</em><br>Operations & support</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/JooHeeWon.jpeg" alt="Joo Heewon">
-      <h3>Joo Heewon</h3>
-      <p><em>Member, Management</em><br>Operations & support</p>
+  <div class="team-section">
+    <div class="team-title">Mechanical</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/ChoiSuYong.jpeg" alt="Choi Suyong">
+        <h3>Choi Suyong</h3>
+        <p><em>Mechanics Member</em><br>Mechanical design</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/KimSuGi.jpeg" alt="Kim Sugi">
+        <h3>Kim Sugi</h3>
+        <p><em>Mechanics Member</em><br>Mechanical design</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/YuSoHyeon.jpeg" alt="Yu Sohyeon">
+        <h3>Yu Sohyeon</h3>
+        <p><em>Mechanics Member</em><br>Mechanical design</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">External Labor</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/SeoJungGeun.jpeg" alt="Seo Junggeun">
-      <h3>Seo Junggeun</h3>
-      <p><em>Electronics</em><br>External support</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/ChoiJunBin.jpeg" alt="Choi Junbin">
-      <h3>Choi Junbin</h3>
-      <p><em>Mechanics</em><br>External support</p>
+  <div class="team-section">
+    <div class="team-title">Software</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/JooMinChan.jpeg" alt="Joo Minchan">
+        <h3>Joo Minchan</h3>
+        <p><em>Software Member</em><br>Software development</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/ParkChan.jpeg" alt="Park Chan">
+        <h3>Park Chan</h3>
+        <p><em>Software Member</em><br>Software development</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/KimJaeuk.jpeg" alt="Kim Jaeuk">
+        <h3>Kim Jaeuk</h3>
+        <p><em>Software Member</em><br>Software development</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/PaikInSeong.jpeg" alt="Paik Inseong">
+        <h3>Paik Inseong</h3>
+        <p><em>Software Member</em><br>Software development</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Mechanics</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyeongmin">
-      <h3>Noh Gyeongmin</h3>
-      <p><em>Lead, Mechanics</em><br>Mechanical systems</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/ChoiSuYong.jpeg" alt="Choi Suyong">
-      <h3>Choi Suyong</h3>
-      <p><em>Member, Mechanics</em><br>Mechanical design</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/KimSuGi.jpeg" alt="Kim Sugi">
-      <h3>Kim Sugi</h3>
-      <p><em>Member, Mechanics</em><br>Mechanical design</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/YuSoHyeon.jpeg" alt="Yu Sohyeon">
-      <h3>Yu Sohyeon</h3>
-      <p><em>Member, Mechanics</em><br>Mechanical design</p>
+  <div class="team-section">
+    <div class="team-title">Electronics</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/KimHeeTae.jpeg" alt="Kim Heetae">
+        <h3>Kim Heetae</h3>
+        <p><em>Member, Electronics</em><br>Electronics systems</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Electronics</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
-      <h3>Ahn Yeonsu</h3>
-      <p><em>Lead, Electronics</em><br>Electronics systems</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/KimHeeTae.jpeg" alt="Kim Heetae">
-      <h3>Kim Heetae</h3>
-      <p><em>Member, Electronics</em><br>Electronics development</p>
+  <div class="team-section">
+    <div class="team-title">Management</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/OhSoYeon.jpeg" alt="Oh Soyeon">
+        <h3>Oh Soyeon</h3>
+        <p><em>Member, Management</em><br>Operations & support</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/JooHeeWon.jpeg" alt="Joo Heewon">
+        <h3>Joo Heewon</h3>
+        <p><em>Member, Management</em><br>Operations & support</p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="team-section">
-  <div class="team-title">Software</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
-      <h3>Myung Gyungmin</h3>
-      <p><em>Lead, Software</em><br>Software architecture</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2025/JooMinChan.jpeg" alt="Joo Minchan">
-      <h3>Joo Minchan</h3>
-      <p><em>Member, Software</em><br>Software development</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/ParkChan.jpeg" alt="Park Chan">
-      <h3>Park Chan</h3>
-      <p><em>Member, Software</em><br>Software development</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/KimJaeuk.jpeg" alt="Kim Jaeuk">
-      <h3>Kim Jaeuk</h3>
-      <p><em>Member, Software</em><br>Software development</p>
-    </div>
-    <div class="member-card">
-      <img src="/img/members/2026/PaikInSeong.jpeg" alt="Paik Inseong">
-      <h3>Paik Inseong</h3>
-      <p><em>Member, Software</em><br>Software development</p>
+  <div class="team-section">
+    <div class="team-title">External Labor</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/SeoJungGeun.jpeg" alt="Seo Junggeun">
+        <h3>Seo Junggeun</h3>
+        <p><em>Electronics</em><br>External support</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2025/ChoiJunBin.jpeg" alt="Choi Junbin">
+        <h3>Choi Junbin</h3>
+        <p><em>Mechanics</em><br>External support</p>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="team-section">
-  <div class="team-title">Science</div>
-  <div class="members-grid">
-    <div class="member-card">
-      <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
-      <h3>Kim Robin</h3>
-      <p><em>Science</em><br>Science mission</p>
-    </div>
-  </div>
-</div>
 </div>
 
 <script>
