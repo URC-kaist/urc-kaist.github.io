@@ -39,7 +39,7 @@ date = "2025-06-25"
 }
 .member-card {
   width: 100%;
-  max-width: 260px;
+  max-width: 210px;
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -55,8 +55,6 @@ date = "2025-06-25"
   margin: 0 0 0.75rem 0;
   border-radius: 0;
   filter: brightness(0.97) contrast(0.96) saturate(0.94);
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
 }
 .member-card h3 {
   margin: 0.5rem 0 0.25rem;
