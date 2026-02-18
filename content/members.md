@@ -194,117 +194,114 @@ date = "2025-06-25"
       <div class="member-card">
         <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
         <h3>Jung Myungwoo</h3>
-        <p><em>General Lead</em><br>Overall leadership</p>
-      </div>
-      <div class="member-card">
-        <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyeongmin">
-        <h3>Noh Gyeongmin</h3>
-        <p><em>Lead, Mechanics</em><br>Mechanical systems</p>
+        <p><em>Project Lead</em><br>Overall leadership</p>
       </div>
       <div class="member-card">
         <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
         <h3>Myung Gyungmin</h3>
-        <p><em>Lead, Software</em><br>Software architecture</p>
-      </div>
-      <div class="member-card">
-        <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
-        <h3>Kim Robin</h3>
-        <p><em>Lead, Science</em><br>Science mission</p>
-      </div>
-      <div class="member-card">
-        <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
-        <h3>Ahn Yeonsu</h3>
-        <p><em>Lead, Management / Electronics</em><br><em></p>
+        <p><em>Co-Lead</em><br>Team coordination</p>
       </div>
     </div>
   </div>
 
   <div class="team-section">
-    <div class="team-title">Mechanical</div>
+    <div class="team-title">Core Rover / Manipulator Team</div>
     <div class="members-grid">
       <div class="member-card">
-        <img src="/img/members/2026/ChoiSuYong.jpeg" alt="Choi Suyong">
-        <h3>Choi Suyong</h3>
-        <p><em>Mechanics Member</em><br>Mechanical design</p>
+        <img src="/img/members/2025/NohGyungMin.jpeg" alt="Noh Gyeongmin">
+        <h3>Noh Gyeongmin</h3>
+        <p><em>Core Rover Lead</em><br>Core rover integration</p>
       </div>
       <div class="member-card">
-        <img src="/img/members/2026/KimSuGi.jpeg" alt="Kim Sugi">
-        <h3>Kim Sugi</h3>
-        <p><em>Mechanics Member</em><br>Mechanical design</p>
+        <img src="/img/members/2025/JungMyungWoo.jpeg" alt="Jung Myungwoo">
+        <h3>Jung Myungwoo</h3>
+        <p><em>Member</em><br>Core rover & manipulator</p>
       </div>
       <div class="member-card">
-        <img src="/img/members/2026/YuSoHyeon.jpeg" alt="Yu Sohyeon">
-        <h3>Yu Sohyeon</h3>
-        <p><em>Mechanics Member</em><br>Mechanical design</p>
+        <img src="/img/members/2025/MyungGyungMin.jpeg" alt="Myung Gyungmin">
+        <h3>Myung Gyungmin</h3>
+        <p><em>Member</em><br>Core rover & manipulator</p>
       </div>
     </div>
   </div>
 
   <div class="team-section">
-    <div class="team-title">Software</div>
+    <div class="team-title">Software / Autonomy Team</div>
     <div class="members-grid">
-      <div class="member-card">
-        <img src="/img/members/2025/JooMinChan.jpeg" alt="Joo Minchan">
-        <h3>Joo Minchan</h3>
-        <p><em>Software Member</em><br>Software development</p>
-      </div>
-      <div class="member-card">
-        <img src="/img/members/2026/ParkChan.jpeg" alt="Park Chan">
-        <h3>Park Chan</h3>
-        <p><em>Software Member</em><br>Software development</p>
-      </div>
       <div class="member-card">
         <img src="/img/members/2026/KimJaeuk.jpeg" alt="Kim Jaeuk">
         <h3>Kim Jaeuk</h3>
-        <p><em>Software Member</em><br>Software development</p>
+        <p><em>Software Lead</em><br>Software development</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="team-title">Drone Team</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/ParkChan.jpeg" alt="Park Chan">
+        <h3>Park Chan</h3>
+        <p><em>Drone Lead</em><br>Drone systems</p>
       </div>
       <div class="member-card">
         <img src="/img/members/2026/PaikInSeong.jpeg" alt="Paik Inseong">
         <h3>Paik Inseong</h3>
-        <p><em>Software Member</em><br>Software development</p>
+        <p><em>Drone Member</em><br>Drone systems</p>
       </div>
     </div>
   </div>
 
   <div class="team-section">
-    <div class="team-title">Electronics</div>
+    <div class="team-title">Lander Team</div>
     <div class="members-grid">
       <div class="member-card">
         <img src="/img/members/2025/KimHeeTae.jpeg" alt="Kim Heetae">
         <h3>Kim Heetae</h3>
-        <p><em>Member, Electronics</em><br>Electronics systems</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="team-section">
-    <div class="team-title">Management</div>
-    <div class="members-grid">
-      <div class="member-card">
-        <img src="/img/members/2026/OhSoYeon.jpeg" alt="Oh Soyeon">
-        <h3>Oh Soyeon</h3>
-        <p><em>Member, Management</em><br>Operations & support</p>
+        <p><em>Lander Lead</em><br>Lander systems</p>
       </div>
       <div class="member-card">
         <img src="/img/members/2026/JooHeeWon.jpeg" alt="Joo Heewon">
         <h3>Joo Heewon</h3>
-        <p><em>Member, Management</em><br>Operations & support</p>
+        <p><em>Lander Member</em><br>Lander systems</p>
       </div>
     </div>
   </div>
 
   <div class="team-section">
-    <div class="team-title">External Labor</div>
+    <div class="team-title">Science Team</div>
     <div class="members-grid">
       <div class="member-card">
-        <img src="/img/members/2025/SeoJungGeun.jpeg" alt="Seo Junggeun">
-        <h3>Seo Junggeun</h3>
-        <p><em>Electronics</em><br>External support</p>
+        <img src="/img/members/2025/KimRoBin.jpeg" alt="Kim Robin">
+        <h3>Kim Robin</h3>
+        <p><em>Science Lead</em><br>Science mission</p>
       </div>
       <div class="member-card">
-        <img src="/img/members/2025/ChoiJunBin.jpeg" alt="Choi Junbin">
-        <h3>Choi Junbin</h3>
-        <p><em>Mechanics</em><br>External support</p>
+        <img src="/img/members/2026/KimSuGi.jpeg" alt="Kim Sugi">
+        <h3>Kim Sugi</h3>
+        <p><em>Science Member</em><br>Science payload</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="team-title">Base Station Team</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/YuSoHyeon.jpeg" alt="Yu Sohyeon">
+        <h3>Yu Sohyeon</h3>
+        <p><em>Base Station Lead</em><br>Base station systems</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="team-title">Accounting Team</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
+        <h3>Ahn Yeonsu</h3>
+        <p><em>Accounting Lead</em><br>Budgeting & finance</p>
       </div>
     </div>
   </div>
