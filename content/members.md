@@ -296,6 +296,17 @@ date = "2025-06-25"
   </div>
 
   <div class="team-section">
+    <div class="team-title">Media Production Team</div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/LeeMyeongje.jpeg" alt="Lee Myeongje">
+        <h3>Lee Myeongje</h3>
+        <p><em>Media Production Lead</em><br>Media & communications</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
     <div class="team-title">Accounting Team</div>
     <div class="members-grid">
       <div class="member-card">
