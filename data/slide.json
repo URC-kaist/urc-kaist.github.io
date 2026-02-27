@@ -1,10 +1,10 @@
 [
   {
-    "title": "Autonomous Robotics, Engineered at KAIST",
-    "image": "img/slide/autonomous_drive.png"
-  },
-  {
     "title": "Building the Next Generation of Mars Rovers",
     "image": "img/slide/rover_deploy.png"
+  },
+  {
+    "title": "Autonomous Robotics, Engineered at KAIST",
+    "image": "img/slide/autonomous_drive.png"
   }
 ]
