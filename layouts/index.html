@@ -21,6 +21,21 @@
     <span class="icon-keyboard_arrow_up text-2xl"></span>
   </div>
   {{- partial "slide.html" . -}}
+  <div class="bg-white py-8 md:py-12">
+    <div class="homepage-video-wrap mx-auto px-4">
+      <div style="position:relative;padding-top:56.25%;overflow:hidden;border-radius:1rem;box-shadow:0 20px 45px rgba(0,0,0,0.16);">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/h1PNtufpOO0?rel=0"
+          title="URC-KAIST video"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;">
+        </iframe>
+      </div>
+    </div>
+  </div>
   {{- partial "strip.html" . -}}
   {{ with .Site.Data.sponsors }}
   <div style="padding:3rem 0;">

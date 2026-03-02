@@ -4,3 +4,17 @@
 .h-8 { height: 2rem; }
 @media (min-width: 768px) { .md\:h-9 { height: 2.25rem; } }
 @media (min-width: 1024px) { .lg\:h-10 { height: 2.5rem; } }
+
+.homepage-video-wrap {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .homepage-video-wrap {
+    width: 50%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
