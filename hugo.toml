@@ -43,10 +43,10 @@ hasCJKLanguage = true
 
   [params.homepage_meta_tags]
     meta_description = "We are the MR2 KAIST Rover Team."
-    meta_og_title = "MR2 KAIST"
+    meta_og_title = "Building the Next Generation of Mars Rovers | MR2 KAIST"
     meta_og_type = "website"
     meta_og_url = "https://urc-kaist.github.io/"
-    meta_og_image = "https://urc-kaist.github.io/img/slide/autonomous_drive.png"
+    meta_og_image = "https://urc-kaist.github.io/img/og/homepage-rover.png"
     meta_og_description = "We are the MR2 KAIST Rover Team."
 
 [menu]
