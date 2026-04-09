@@ -10,9 +10,20 @@
   logo: "img/sponsors/2.png"
   alt:  "2"
 
-- name: "3"
+- name: "KAIST Mobility Research Center"
+  logo: "img/sponsors/12.png"
+  alt:  "KAIST 모빌리티 연구소"
+  class: "sponsor-logo-large"
+
+- name: "KAIST Institute for Space and Mobility Research Center"
+  logo: "img/sponsors/11.png"
+  alt:  "KAIST 우주연구원"
+  class: "sponsor-logo-large-medium"
+
+- name: "ESUN"
   logo: "img/sponsors/3.png"
-  alt:  "3"
+  alt:  "ESUN"
+  class: "sponsor-logo-small"
 
 # - name: "4"
 #   logo: "img/sponsors/4.png"

@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Korea Economic Daily",
+    "source_label": "한국경제",
+    "date": "2026-04-09",
+    "title": "KAIST 학부생 팀 \"동아리방서 쪽잠 자며 만든 로봇, 세계 무대 섭니다\"",
+    "description": "A feature story on the student-led build process behind MR2 and the team's first trip to the URC finals.",
+    "url": "https://www.hankyung.com/article/2026040904961"
+  },
+  {
+    "source": "Electronic Times",
+    "source_label": "전자신문",
+    "date": "2026-04-05",
+    "title": "[포토] 세계 최대 화성탐사 대회 준비하는 카이스트 학생들",
+    "description": "Photo coverage of MR2's rover assembly, testing, and mission preparation work at KAIST.",
+    "url": "https://www.etnews.com/20260405000086"
+  },
+  {
+    "source": "KAIST News",
+    "source_label": "KAIST 뉴스",
+    "date": "2026-04-03",
+    "title": "학부생 로버팀(MR2), 세계 최대 화성탐사 대회 ‘URC 2026’ 본선 진출",
+    "description": "The official announcement of KAIST's first URC finals berth, including the team's score and GAP-1000 overview.",
+    "url": "https://news.kaist.ac.kr/news/html/news/?mng_no=60170&mode=V"
+  },
+  {
+    "source": "iNews24",
+    "source_label": "아이뉴스24",
+    "date": "2026-04-03",
+    "title": "韓 학생이 만든 로버, '붉은 행성' 화성으로 갈까 [지금은 우주]",
+    "description": "A space-focused column that frames MR2's rover challenge in the broader context of Mars exploration.",
+    "url": "https://v.daum.net/v/20260403091240161"
+  },
+  {
+    "source": "Donga Science",
+    "source_label": "동아사이언스",
+    "date": "2026-04-03",
+    "title": "KAIST 학부생 만든 탐사 로버, 세계 화성탐사 대회 본선 간다",
+    "description": "Science coverage highlighting the rover's manipulator, autonomous navigation, and onboard science systems.",
+    "url": "https://www.dongascience.com/ko/news/77191"
+  },
+  {
+    "source": "Yonhap News",
+    "source_label": "연합뉴스",
+    "date": "2026-04-03",
+    "title": "KAIST 학부생 로버팀, 세계 최대 화성탐사 대회 본선 진출",
+    "description": "A national wire summary of MR2's top-38 finish among 116 teams from 18 countries.",
+    "url": "https://www.yna.co.kr/view/AKR20260403164800063"
+  }
+]

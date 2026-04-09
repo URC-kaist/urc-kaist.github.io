@@ -40,18 +40,26 @@
     </div>
   </div>
   {{- partial "strip.html" . -}}
-  {{ with .Site.Data.sponsors }}
+  {{ $sponsors := .Site.Data.sponsors }}
+  {{ $affiliates := .Site.Data.affiliates }}
+  {{ if or $sponsors $affiliates }}
   <div style="padding:3rem 0;">
     <div style="max-width:1280px;margin:0 auto;">
       <h2 style="text-align:center;font-size:1.5rem;font-weight:600;margin-bottom:2rem;">
         Our Sponsors & Affiliates
       </h2>
       <style>
+        .sponsor-affiliate-section {
+          padding: 0 1rem;
+        }
+
         .sponsor-grid {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           gap: 1.5rem 2rem;
+          max-width: 64rem;
+          margin: 0 auto;
         }
 
         .sponsor-logo {
@@ -62,17 +70,183 @@
           object-fit: contain;
         }
 
+        .sponsor-logo-small {
+          max-width: 7rem;
+          max-height: 3.5rem;
+        }
+
+        .sponsor-logo-large {
+          max-width: 28rem;
+          max-height: 14rem;
+        }
+
+        .sponsor-logo-large-medium {
+          max-width: 22.5rem;
+          max-height: 11.25rem;
+        }
+
         @media (min-width:640px) {
           .sponsor-logo {
             max-width: 12rem;
             max-height: 6rem;
           }
+
+          .sponsor-logo-small {
+            max-width: 8.5rem;
+            max-height: 4rem;
+          }
+
+          .sponsor-logo-large {
+            max-width: 32rem;
+            max-height: 16rem;
+          }
+
+          .sponsor-logo-large-medium {
+            max-width: 25.5rem;
+            max-height: 12.75rem;
+          }
+        }
+
+        .affiliate-block {
+          max-width: 56rem;
+          margin: 2.25rem auto 0;
+          padding-top: 1.75rem;
+          border-top: 1px solid rgba(15, 23, 42, 0.08);
+        }
+
+        .affiliate-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 0.5rem 1.25rem;
+          text-align: center;
+        }
+
+        .affiliate-label {
+          margin: 0 0 0.9rem;
+          text-align: center;
+          font-size: 1rem;
+          font-weight: 600;
+          color: rgb(15, 23, 42);
+        }
+
+        .affiliate-name {
+          display: inline-block;
+          font-size: 0.95rem;
+          line-height: 1.2;
+          color: rgb(15, 23, 42);
         }
       </style>
 
-      <div class="sponsor-grid">
+      <div class="sponsor-affiliate-section">
+        {{ with $sponsors }}
+        <div class="sponsor-grid">
         {{ range . }}
-        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="sponsor-logo" loading="lazy">
+        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="sponsor-logo{{ with .class }} {{ . }}{{ end }}" loading="lazy">
+        {{ end }}
+        </div>
+        {{ end }}
+
+        {{ with $affiliates }}
+        <div class="affiliate-block">
+          <p class="affiliate-label">Thanks to</p>
+          <div class="affiliate-list">
+          {{ range . }}
+            <span class="affiliate-name">{{ . }}</span>
+          {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+
+  {{ with .Site.Data.news_coverage }}
+  <div style="padding:1rem 0 3.5rem;">
+    <div style="max-width:1280px;margin:0 auto;padding:0 1rem;">
+      <div style="display:flex;align-items:end;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1.5rem;">
+        <div>
+          <h2 style="font-size:1.75rem;font-weight:700;line-height:1.1;margin:0;">In the News</h2>
+        </div>
+      </div>
+      <style>
+        .news-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        .news-card {
+          display: block;
+          height: 100%;
+          padding: 1.25rem;
+          border: 1px solid rgba(15, 23, 42, 0.1);
+          border-radius: 1rem;
+          background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(248, 250, 252, 1) 100%);
+          box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+          transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+        }
+
+        .news-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 18px 40px rgba(15, 23, 42, 0.1);
+          border-color: rgba(37, 99, 235, 0.24);
+        }
+
+        .news-meta {
+          display: flex;
+          justify-content: space-between;
+          gap: 0.75rem;
+          align-items: center;
+          margin-bottom: 0.9rem;
+          font-size: 0.84rem;
+          color: rgb(71, 85, 105);
+        }
+
+        .news-source {
+          font-weight: 700;
+          letter-spacing: 0.01em;
+          color: rgb(15, 23, 42);
+        }
+
+        .news-title {
+          margin: 0;
+          font-size: 1.05rem;
+          font-weight: 700;
+          line-height: 1.45;
+          color: rgb(15, 23, 42);
+        }
+
+        .news-description {
+          margin: 0.8rem 0 0;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: rgb(51, 65, 85);
+        }
+
+        @media (min-width: 768px) {
+          .news-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+          }
+        }
+
+        @media (min-width: 1100px) {
+          .news-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+          }
+        }
+      </style>
+      <div class="news-grid">
+        {{ range . }}
+        <a href="{{ .url }}" class="news-card" target="_blank" rel="noopener noreferrer">
+          <div class="news-meta">
+            <span class="news-source">{{ .source_label }}</span>
+            <time datetime="{{ .date }}">{{ .date }}</time>
+          </div>
+          <h3 class="news-title">{{ .title }}</h3>
+          <p class="news-description">{{ .description }}</p>
+        </a>
         {{ end }}
       </div>
     </div>
