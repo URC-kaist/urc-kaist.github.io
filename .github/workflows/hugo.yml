@@ -32,28 +32,24 @@ jobs:
             https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
           sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      # 2️⃣ Tailwind/Sass CLI (Tella는 PostCSS로 Tailwind를 빌드합니다)
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-
-      # 3️⃣ Node JS (필수 – PostCSS / esbuild 등을 npm script로 실행)
+      # 2️⃣ Node JS (필수 – PostCSS / esbuild 등을 npm script로 실행)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      # 4️⃣ 소스 체크아웃 (+ 테마 서브모듈 포함)
+      # 3️⃣ 소스 체크아웃 (+ 테마 서브모듈 포함)
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
 
-      # 5️⃣ GitHub Pages 메타 데이터
+      # 4️⃣ GitHub Pages 메타 데이터
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      # 6️⃣ npm 의존성 설치 (root 폴더에 exampleSite에서 복사해둔 package.json 필수)
+      # 5️⃣ npm 의존성 설치 (root 폴더에 exampleSite에서 복사해둔 package.json 필수)
       - name: Install Node dependencies
         run: |
           if [[ -f package-lock.json || -f npm-shrinkwrap.json ]]; then
@@ -62,7 +58,7 @@ jobs:
             npm install
           fi
 
-      # 7️⃣ **Tella 빌드**  
+      # 6️⃣ **Tella 빌드**  
       #    package.json 안의 "build" 스크립트가  
       #    - Tailwind/PostCSS → ./static/css  
       #    - JS 번들링(esbuild) → ./static/js  
@@ -75,7 +71,7 @@ jobs:
           BASE_URL: "${{ steps.pages.outputs.base_url }}/"
         run: npm run build -- --baseURL "${BASE_URL}"
 
-      # 8️⃣ 정적 파일 아티팩트 업로드
+      # 7️⃣ 정적 파일 아티팩트 업로드
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
