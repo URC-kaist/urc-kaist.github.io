@@ -70,6 +70,13 @@
           object-fit: contain;
         }
 
+        .sponsor-link {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+        }
+
         .sponsor-logo-small {
           max-width: 7rem;
           max-height: 3.5rem;
@@ -83,6 +90,11 @@
         .sponsor-logo-large-medium {
           max-width: 22.5rem;
           max-height: 11.25rem;
+        }
+
+        .sponsor-logo-xlarge {
+          max-width: 24rem;
+          max-height: 12rem;
         }
 
         @media (min-width:640px) {
@@ -104,6 +116,11 @@
           .sponsor-logo-large-medium {
             max-width: 25.5rem;
             max-height: 12.75rem;
+          }
+
+          .sponsor-logo-xlarge {
+            max-width: 28.8rem;
+            max-height: 14.4rem;
           }
         }
 
@@ -142,7 +159,13 @@
         {{ with $sponsors }}
         <div class="sponsor-grid">
         {{ range . }}
+        {{ if .url }}
+        <a href="{{ .url }}" class="sponsor-link" target="_blank" rel="noopener noreferrer" aria-label="{{ .alt | default .name }}">
         <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="sponsor-logo{{ with .class }} {{ . }}{{ end }}" loading="lazy">
+        </a>
+        {{ else }}
+        <img src="{{ .logo | relURL }}" alt="{{ .alt | default .name }}" class="sponsor-logo{{ with .class }} {{ . }}{{ end }}" loading="lazy">
+        {{ end }}
         {{ end }}
         </div>
         {{ end }}
