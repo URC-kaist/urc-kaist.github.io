@@ -307,15 +307,31 @@ date = "2025-06-25"
   </div>
 
   <div class="team-section">
-    <div class="team-title">Accounting Team</div>
+    <div class="team-title">Rookie Team</div>
     <div class="members-grid">
       <div class="member-card">
-        <img src="/img/members/2025/AhnYeonSu.jpeg" alt="Ahn Yeonsu">
-        <h3>Ahn Yeonsu</h3>
-        <p><em>Accounting Lead</em><br>Budgeting & finance</p>
+        <img src="/img/members/2026/KimGeonHee.jpeg" alt="Kim Geonhee">
+        <h3>Kim Geonhee</h3>
+        <p><em>Rookie Member</em><br>Rookie team</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/ChungYongWhan.jpeg" alt="Chung Yongwhan">
+        <h3>Chung Yongwhan</h3>
+        <p><em>Rookie Member</em><br>Rookie team</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/LeeSomin.jpeg" alt="Lee Somin">
+        <h3>Lee Somin</h3>
+        <p><em>Rookie Member</em><br>Rookie team</p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/KimDonghyeok.jpeg" alt="Kim Donghyeok">
+        <h3>Kim Donghyeok</h3>
+        <p><em>Rookie Member</em><br>Rookie team</p>
       </div>
     </div>
   </div>
+
 </div>
 
 <script>
