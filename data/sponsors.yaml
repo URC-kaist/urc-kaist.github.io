@@ -31,6 +31,12 @@
   class: "sponsor-logo-large-medium"
   url: "https://ksi.kaist.ac.kr/"
 
+- name: "NOTA AI"
+  logo: "img/sponsors/14.png"
+  alt:  "NOTA AI"
+  class: "sponsor-logo-wide"
+  url: "https://nota.ai/"
+
 - name: "ESUN"
   logo: "img/sponsors/3.png"
   alt:  "ESUN"
