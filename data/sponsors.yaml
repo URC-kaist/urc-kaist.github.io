@@ -37,6 +37,18 @@
   class: "sponsor-logo-wide"
   url: "https://nota.ai/"
 
+- name: "Future Connect"
+  logo: "img/sponsors/future_connect.png"
+  alt:  "Future Connect"
+  class: "sponsor-logo-wide"
+  url: "https://futureconnect.co.kr/"
+
+- name: "MEBK"
+  logo: "img/sponsors/mebk.png"
+  alt:  "Molecular Metabolism & Exercise Biochemistry at KAIST"
+  class: "sponsor-logo-wide"
+  url: "https://sites.google.com/view/kimlabatkaist/home"
+
 - name: "ESUN"
   logo: "img/sponsors/3.png"
   alt:  "ESUN"
