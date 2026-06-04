@@ -1,10 +1,14 @@
 [
   {
     "title": "Building the Next Generation of Mars Rovers",
-    "image": "img/posts/urc-2026-groupphoto-dark.jpeg"
+    "image": "img/slide/rover_mars_field.jpeg"
   },
   {
     "title": "Autonomous Robotics, Engineered at KAIST",
-    "image": "img/slide/autonomous_drive.png"
+    "image": "img/slide/autonomous_robotics_field.jpeg"
+  },
+  {
+    "title": "One Team, One Rover, One Mission",
+    "image": "img/slide/team_rover_field.jpeg"
   }
 ]
