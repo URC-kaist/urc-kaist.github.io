@@ -53,6 +53,62 @@
     gap: 16px;
   }
 
+  .private-gallery__video-button {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 0;
+    background: #111827;
+    cursor: pointer;
+  }
+
+  .private-gallery__video-button:focus-visible {
+    outline: 3px solid var(--gallery-accent);
+    outline-offset: 3px;
+  }
+
+  .private-gallery__video-thumb {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 180ms ease, filter 180ms ease;
+  }
+
+  .private-gallery__video-button:hover .private-gallery__video-thumb {
+    transform: scale(1.025);
+    filter: brightness(0.82);
+  }
+
+  .private-gallery__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 58px;
+    height: 58px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    background: rgba(17, 24, 39, 0.78);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.26);
+    backdrop-filter: blur(2px);
+  }
+
+  .private-gallery__play::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 19px solid #fff;
+  }
+
   .private-gallery__section-title {
     margin: 0 0 14px;
     font-size: 1.25rem;
@@ -137,19 +193,11 @@
     object-fit: contain;
   }
 
-  .private-gallery__close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 42px;
-    height: 42px;
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    border-radius: 50%;
-    background: rgba(10, 15, 28, 0.7);
-    color: #fff;
-    font-size: 28px;
-    line-height: 1;
-    cursor: pointer;
+  .private-gallery__dialog-video {
+    width: min(92vw, 1180px);
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: 0;
   }
 
   @media (max-width: 640px) {
@@ -182,20 +230,37 @@
     <p class="private-gallery__count">{{ .Params.photo_count }} photos</p>
   </header>
 
-  {{ with .Params.video_drive_file_ids }}
+  {{ with .Params.youtube_video_ids }}
     <section class="private-gallery__video" aria-labelledby="private-gallery-video-title">
       <h2 id="private-gallery-video-title" class="private-gallery__section-title">Videos</h2>
       <div class="private-gallery__video-grid">
         {{ range $index, $id := . }}
-          <iframe
-            class="private-gallery__embed"
-            src="https://drive.google.com/file/d/{{ $id }}/preview"
-            title="Exclusive video {{ add $index 1 }}"
-            allow="autoplay; fullscreen">
-          </iframe>
+          <button class="private-gallery__video-button" type="button" data-youtube-id="{{ $id }}" aria-label="Play video {{ add $index 1 }}">
+            <img
+              class="private-gallery__video-thumb"
+              src="https://i.ytimg.com/vi/{{ $id }}/hqdefault.jpg"
+              alt="Exclusive video {{ add $index 1 }}"
+              loading="lazy"
+              decoding="async">
+            <span class="private-gallery__play" aria-hidden="true"></span>
+          </button>
         {{ end }}
       </div>
     </section>
+  {{ else }}
+    {{ with .Params.youtube_playlist_id }}
+      <section class="private-gallery__video" aria-labelledby="private-gallery-video-title">
+        <h2 id="private-gallery-video-title" class="private-gallery__section-title">Videos</h2>
+        <iframe
+          class="private-gallery__embed"
+          src="https://www.youtube-nocookie.com/embed/videoseries?list={{ . }}&rel=0"
+          title="Exclusive video playlist"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen">
+        </iframe>
+      </section>
+    {{ end }}
   {{ end }}
 
   <section class="private-gallery__photos" aria-labelledby="private-gallery-photos-title">
@@ -213,8 +278,19 @@
 
   <dialog class="private-gallery__dialog" aria-label="Photo preview">
     <div class="private-gallery__dialog-frame">
-      <button class="private-gallery__close" type="button" aria-label="Close photo preview">&times;</button>
       <img class="private-gallery__dialog-image" alt="">
+    </div>
+  </dialog>
+
+  <dialog class="private-gallery__dialog" aria-label="Video player">
+    <div class="private-gallery__dialog-frame">
+      <iframe
+        class="private-gallery__dialog-video"
+        title="Exclusive video player"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+        allowfullscreen>
+      </iframe>
     </div>
   </dialog>
 
@@ -257,25 +333,41 @@
 
 <script>
   (() => {
-    const dialog = document.querySelector(".private-gallery__dialog");
+    const photoDialog = document.querySelector("[aria-label='Photo preview']");
+    const videoDialog = document.querySelector("[aria-label='Video player']");
     const image = document.querySelector(".private-gallery__dialog-image");
-    const close = document.querySelector(".private-gallery__close");
+    const video = document.querySelector(".private-gallery__dialog-video");
 
     document.querySelectorAll("[data-gallery-src]").forEach((button) => {
       button.addEventListener("click", () => {
         image.src = button.dataset.gallerySrc;
         image.alt = button.querySelector("img").alt;
-        if (typeof dialog.showModal === "function") {
-          dialog.showModal();
+        if (typeof photoDialog.showModal === "function") {
+          photoDialog.showModal();
         }
       });
     });
 
-    close.addEventListener("click", () => dialog.close());
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) {
-        dialog.close();
-      }
+    document.querySelectorAll("[data-youtube-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        video.src = `https://www.youtube-nocookie.com/embed/${button.dataset.youtubeId}?rel=0&autoplay=1`;
+        if (typeof videoDialog.showModal === "function") {
+          videoDialog.showModal();
+        }
+      });
+    });
+
+    document.querySelectorAll(".private-gallery__dialog").forEach((dialog) => {
+      dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) {
+          dialog.close();
+        }
+      });
+      dialog.addEventListener("close", () => {
+        if (dialog === videoDialog) {
+          video.src = "";
+        }
+      });
     });
   })();
 </script>
