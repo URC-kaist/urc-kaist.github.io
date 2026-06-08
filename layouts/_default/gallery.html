@@ -39,6 +39,43 @@
     white-space: nowrap;
   }
 
+  .private-gallery__document {
+    margin: 56px 0 30px;
+  }
+
+  .private-gallery__video {
+    margin: 0 0 34px;
+  }
+
+  .private-gallery__video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .private-gallery__section-title {
+    margin: 0 0 14px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+  .private-gallery__embed {
+    width: 100%;
+    height: min(78vh, 760px);
+    min-height: 520px;
+    display: block;
+    border: 1px solid var(--gallery-line);
+    border-radius: 6px;
+    background: #f6f7f9;
+  }
+
+  .private-gallery__video .private-gallery__embed {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    min-height: 0;
+  }
+
   .private-gallery__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -132,6 +169,10 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 10px;
     }
+
+    .private-gallery__video-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -141,14 +182,34 @@
     <p class="private-gallery__count">{{ .Params.photo_count }} photos</p>
   </header>
 
-  <div class="private-gallery__grid">
+  {{ with .Params.video_drive_file_ids }}
+    <section class="private-gallery__video" aria-labelledby="private-gallery-video-title">
+      <h2 id="private-gallery-video-title" class="private-gallery__section-title">Videos</h2>
+      <div class="private-gallery__video-grid">
+        {{ range $index, $id := . }}
+          <iframe
+            class="private-gallery__embed"
+            src="https://drive.google.com/file/d/{{ $id }}/preview"
+            title="Exclusive video {{ add $index 1 }}"
+            allow="autoplay; fullscreen">
+          </iframe>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="private-gallery__photos" aria-labelledby="private-gallery-photos-title">
+    <h2 id="private-gallery-photos-title" class="private-gallery__section-title">Photos</h2>
+    <div class="private-gallery__grid">
     {{ range seq 1 .Params.photo_count }}
       {{ $src := printf "/private-gallery/images/photo-%03d.jpg" . }}
+      {{ $thumb := printf "/private-gallery/thumbs/photo-%03d.jpg" . }}
       <button class="private-gallery__button" type="button" data-gallery-src="{{ $src | relURL }}" aria-label="Open photo {{ . }}">
-        <img class="private-gallery__image" src="{{ $src | relURL }}" alt="Exclusive photo {{ . }}" loading="lazy" decoding="async">
+        <img class="private-gallery__image" src="{{ $thumb | relURL }}" alt="Exclusive photo {{ . }}" loading="lazy" decoding="async">
       </button>
     {{ end }}
-  </div>
+    </div>
+  </section>
 
   <dialog class="private-gallery__dialog" aria-label="Photo preview">
     <div class="private-gallery__dialog-frame">
@@ -156,6 +217,42 @@
       <img class="private-gallery__dialog-image" alt="">
     </div>
   </dialog>
+
+  {{ with .Params.drive_file_id }}
+    <section class="private-gallery__document" aria-labelledby="private-gallery-document-title">
+      <h2 id="private-gallery-document-title" class="private-gallery__section-title">SE Presentation Slides</h2>
+      <iframe
+        class="private-gallery__embed"
+        src="https://drive.google.com/file/d/{{ . }}/preview"
+        title="SE presentation slides"
+        allow="autoplay">
+      </iframe>
+    </section>
+  {{ end }}
+
+  {{ with .Params.additional_drive_file_id }}
+    <section class="private-gallery__document" aria-labelledby="private-gallery-additional-document-title">
+      <h2 id="private-gallery-additional-document-title" class="private-gallery__section-title">2026 SAR Report Submission</h2>
+      <iframe
+        class="private-gallery__embed"
+        src="https://drive.google.com/file/d/{{ . }}/preview"
+        title="2026 SAR report submission"
+        allow="autoplay">
+      </iframe>
+    </section>
+  {{ end }}
+
+  {{ with .Params.pdr_drive_file_id }}
+    <section class="private-gallery__document" aria-labelledby="private-gallery-pdr-document-title">
+      <h2 id="private-gallery-pdr-document-title" class="private-gallery__section-title">2026 PDR Submission</h2>
+      <iframe
+        class="private-gallery__embed"
+        src="https://drive.google.com/file/d/{{ . }}/preview"
+        title="2026 PDR submission"
+        allow="autoplay">
+      </iframe>
+    </section>
+  {{ end }}
 </section>
 
 <script>
