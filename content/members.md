@@ -50,10 +50,12 @@ date = "2025-06-25"
 }
 .member-card img {
   width: 100%;
+  aspect-ratio: 4 / 5;
   height: auto;
   display: block;
   margin: 0 0 0.75rem 0;
   border-radius: 0;
+  object-fit: cover;
   filter: brightness(0.97) contrast(0.96) saturate(0.94);
 }
 .member-card h3 {
@@ -79,6 +81,27 @@ date = "2025-06-25"
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   color: #111827;
+}
+.advisor-affiliation {
+  max-width: 560px;
+  margin: 0.75rem 0 1.25rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+.advisor-lab-logo {
+  display: block;
+  max-width: 220px;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  margin: 0 0 0.6rem;
+  object-fit: contain;
+}
+.advisor-affiliation p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 </style>
 
@@ -328,6 +351,26 @@ date = "2025-06-25"
         <img src="/img/members/2026/KimDonghyeok.jpeg" alt="Kim Donghyeok">
         <h3>Kim Donghyeok</h3>
         <p><em>Rookie Member</em><br>Rookie team</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-section">
+    <div class="team-title">Science Mission Advisors</div>
+    <div class="advisor-affiliation">
+      <img class="advisor-lab-logo" src="/img/sponsors/mebk.png" alt="Molecular Metabolism & Exercise Biochemistry at KAIST">
+      <p>Molecular Metabolism &amp; Exercise Biochemistry Lab<br>Department of Biological Sciences</p>
+    </div>
+    <div class="members-grid">
+      <div class="member-card">
+        <img src="/img/members/2026/HyeonwooKim.png" alt="Hyeonwoo Kim">
+        <h3>Hyeonwoo Kim</h3>
+        <p><em>Science Mission Advisor</em></p>
+      </div>
+      <div class="member-card">
+        <img src="/img/members/2026/MinkyuLee.jpeg" alt="Minkyu Lee">
+        <h3>Minkyu Lee</h3>
+        <p><em>Science Mission Advisor</em></p>
       </div>
     </div>
   </div>
