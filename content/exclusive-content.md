@@ -22,7 +22,15 @@ youtube_video_ids = [
   "Umj1f7LkvZs",
   "d6a2Nu0Gsus",
   "O_e8rNR6yI8",
-  "ceG4JgvZ5j4"
+  "ceG4JgvZ5j4",
+  "JXWCaMH4Cv4",
+  "Bbgeg1i1iK8",
+  "HlmryrzIwNA",
+  "SBlUnfz0L90",
+  "kfXA0WZV6Z4",
+  "lEtA6XhKu-U",
+  "eJ42Xolt6LI",
+  "B5OM9psi0Jk"
 ]
 drive_file_id = "1wazH0K0PuhceV7ghSD9f5NyZxnUtasCS"
 additional_drive_file_id = "1k1Fb5lJnVteXtyvzvtrABAgLhiUG1IVq"
